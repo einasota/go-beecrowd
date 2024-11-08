@@ -7,6 +7,7 @@ func main(){
 	var valor int 
 
 	fmt.Scanf("%d", &valor)
+	fmt.Printf("%d\n", valor)
 
 	for _, nota := range notas {
 		quantidadeNotas := valor / nota
