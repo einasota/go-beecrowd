@@ -1,3 +1,4 @@
+// Link => https://resources.beecrowd.com/repository/UOJ_1021.html
 package main
 
 import (
@@ -19,10 +20,8 @@ func main(){
 	}
 	fmt.Printf("MOEDAS:\n")
 	for _, moeda := range moedas {
-		quantidadeMoedas := int(valor/moeda)
-		fmt.Printf("%d moeda(s) de R$ %.2f\n", quantidadeMoedas, moeda)
-		valor -= float64(quantidadeMoedas) * moeda
-		valor = math.Round(valor*100)/100
-		// fmt.Printf("%f, %f", valor, quantidadeMoedas)
+		quantidadeMoedas := math.Floor(valor/moeda)
+		fmt.Printf("%.0f moeda(s) de R$ %.2f\n", quantidadeMoedas, moeda)
+		valor = math.Mod(valor, moeda) + 0.00001
 	}
 }

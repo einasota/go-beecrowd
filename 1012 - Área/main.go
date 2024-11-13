@@ -1,3 +1,4 @@
+// Link => https://resources.beecrowd.com/repository/UOJ_1012.html
 package main
 
 import (

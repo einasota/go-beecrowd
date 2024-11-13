@@ -1,3 +1,4 @@
+// Link => https://resources.beecrowd.com/repository/UOJ_1001.html
 package main
 
 import "fmt"
