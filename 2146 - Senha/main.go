@@ -1,16 +1,19 @@
 // Link: https://resources.beecrowd.com/repository/UOJ_2146.html
 package main
 
-import "fmt"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
-func main(){
-  var input int 
-  for true {
-    if input == int {
-      fmt.Scanf("%d", &input)
-      fmt.Println(input - 1)
-    } else {
-      break
-    }
-  }
+func main() {
+	var senha int
+
+	scanner := bufio.NewScanner(os.Stdin)
+
+	for scanner.Scan() {
+		fmt.Sscanf(scanner.Text(), "%d", &senha)
+		fmt.Printf("%d\n",senha-1)
+	}
 }
