@@ -11,7 +11,7 @@ func main() {
 	if media >= 7.0 {
 		fmt.Printf("Aluno aprovado.\n")
 	} else if media < 5.0 {
-		fmt.Printf("Aluno rrprovado.\n")
+		fmt.Printf("Aluno reprovado.\n")
 	} else {
 		fmt.Printf("Aluno em exame.\n")
 		var exame float64
